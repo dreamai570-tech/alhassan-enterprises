@@ -45,7 +45,7 @@ header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 14px rg
 .btn-navy:hover{background:var(--navy2)}
 .menu-btn{display:none;background:none;border:none;font-size:28px;color:var(--navy);cursor:pointer}
 /* hero */
-.hero{background:linear-gradient(120deg,#0b2240 0%,#143a68 60%,#1a4a82 100%);color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
+.hero{background:linear-gradient(120deg,rgba(11,34,64,.88) 0%,rgba(20,58,104,.82) 60%,rgba(26,74,130,.78) 100%),url('images/hero.jpg') center/cover no-repeat;color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
 .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.25),transparent 70%)}
 .hero h1{color:#fff;font-size:clamp(30px,5vw,52px);font-weight:800;margin:14px 0 16px}
 .hero h1 span{color:var(--gold2)}
@@ -79,8 +79,12 @@ header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 14px rg
 /* services */
 #services{background:var(--bg)}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;transition:.2s}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0;overflow:hidden;transition:.2s}
 .svc:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(14,42,71,.12);border-color:var(--gold)}
+.svc-img{height:180px;overflow:hidden;background:#dfe6ee}
+.svc-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.svc:hover .svc-img img{transform:scale(1.07)}
+.svc-body{padding:22px 26px 26px}
 .svc .ico{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:flex;align-items:center;justify-content:center;margin-bottom:16px}
 .svc .ico svg{width:28px;height:28px;stroke:var(--gold2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .svc h3{font-size:18px;margin-bottom:8px}
@@ -378,23 +382,23 @@ const P = {
   wdoor:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M5 9h14M5 15h14"/><circle cx="15" cy="12" r=".8"/>'
 };
 const services = [
-  ["Aluminium Wholesale & Profiles","All kinds of aluminium profiles at wholesale rates — full gauge, genuine material, ready stock.","box"],
-  ["Aluminium Fabrication","Custom fabrication by our own workshop team — precise cutting, neat joints, premium finishing.","fab"],
-  ["Aluminium Windows","Sliding, openable & fixed windows in all gauges and colours — with net options.","win"],
-  ["Aluminium Doors","Durable aluminium doors for homes & offices — single, double & sliding designs.","door"],
-  ["Aluminium Kitchen","Modern modular aluminium kitchens — rust-proof, easy-clean, built to your space.","kit"],
-  ["Glass Work","Glass partitions, railings, shower cabins, shop fronts & 12mm fittings.","glass"],
-  ["Iron & Steel Work","Main gates, staircases, railings, grills & structural steel — strong & long-lasting.","steel"],
-  ["Window Blinds","Roller, zebra & wooden blinds — light control with a clean modern look.","blind"],
-  ["Wallpaper","Imported & local designer wallpapers — hundreds of designs, expert pasting.","wall"],
-  ["Wall Panels","PVC, WPC & decorative wall panels — luxury look walls without civil work.","panel"],
-  ["Ceiling Work","False ceiling, PVC & gypsum designs — elegant finishing for every room.","ceil"],
-  ["Tile & Stone Work","Floor tiles, wall tiles & natural stone fixing with precise levelling.","tile"],
-  ["Fiber Doors","Waterproof fiber doors — ideal for bathrooms & kitchens, termite-proof.","fdoor"],
-  ["Wooden Doors","Solid & engineered wooden doors with polish — classic look, lasting build.","wdoor"]
+  ["Aluminium Wholesale & Profiles","All kinds of aluminium profiles at wholesale rates — full gauge, genuine material, ready stock.","box","svc-wholesale.jpg"],
+  ["Aluminium Fabrication","Custom fabrication by our own workshop team — precise cutting, neat joints, premium finishing.","fab","svc-fabrication.jpg"],
+  ["Aluminium Windows","Sliding, openable & fixed windows in all gauges and colours — with net options.","win","svc-windows.jpg"],
+  ["Aluminium Doors","Durable aluminium doors for homes & offices — single, double & sliding designs.","door","svc-doors.jpg"],
+  ["Aluminium Kitchen","Modern modular aluminium kitchens — rust-proof, easy-clean, built to your space.","kit","svc-kitchen.jpg"],
+  ["Glass Work","Glass partitions, railings, shower cabins, shop fronts & 12mm fittings.","glass","svc-glass.jpg"],
+  ["Iron & Steel Work","Main gates, staircases, railings, grills & structural steel — strong & long-lasting.","steel","svc-steel.jpg"],
+  ["Window Blinds","Roller, zebra & wooden blinds — light control with a clean modern look.","blind","svc-blinds.jpg"],
+  ["Wallpaper","Imported & local designer wallpapers — hundreds of designs, expert pasting.","wall","svc-wallpaper.jpg"],
+  ["Wall Panels","PVC, WPC & decorative wall panels — luxury look walls without civil work.","panel","svc-panels.jpg"],
+  ["Ceiling Work","False ceiling, PVC & gypsum designs — elegant finishing for every room.","ceil","svc-ceiling.jpg"],
+  ["Tile & Stone Work","Floor tiles, wall tiles & natural stone fixing with precise levelling.","tile","svc-tile.jpg"],
+  ["Fiber Doors","Waterproof fiber doors — ideal for bathrooms & kitchens, termite-proof.","fdoor","svc-fiber.jpg"],
+  ["Wooden Doors","Solid & engineered wooden doors with polish — classic look, lasting build.","wdoor","svc-wood.jpg"]
 ];
 document.getElementById('svcGrid').innerHTML = services.map(s=>
-  '<div class="svc reveal"><span class="ico"><svg viewBox="0 0 24 24">'+P[s[2]]+'</svg></span><h3>'+s[0]+'</h3><p>'+s[1]+'</p><a href="'+WA+encodeURIComponent("Assalam-o-Alaikum! Mujhe "+s[0]+" ka quote chahiye.")+'">Inquire on WhatsApp →</a></div>'
+  '<div class="svc reveal"><div class="svc-img"><img loading="lazy" src="images/'+s[3]+'" alt="'+s[0]+'"></div><div class="svc-body"><span class="ico"><svg viewBox="0 0 24 24">'+P[s[2]]+'</svg></span><h3>'+s[0]+'</h3><p>'+s[1]+'</p><a href="'+WA+encodeURIComponent("Assalam-o-Alaikum! Mujhe "+s[0]+" ka quote chahiye.")+'">Inquire on WhatsApp →</a></div></div>'
 ).join('');
 function sendQuote(){
   const n=document.getElementById('qName').value.trim(),
