@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alhassan Enterprises & Dream Decore Solutions | Aluminium, Steel, Glass & Interior Works</title>
+<meta name="description" content="Alhassan Enterprises & Dream Decore Solutions — aluminium wholesale & fabrication, iron & steel work, glass work, blinds, wallpaper, wall panels, ceiling, tiles, fiber & wooden doors in Gujranwala & Gujrat divisions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e2a47; --navy2:#12345c; --gold:#c9a227; --gold2:#e0bc3f;
+  --ink:#1c2733; --muted:#5b6b7d; --bg:#f6f8fb; --card:#ffffff; --line:#e6ecf3;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;line-height:1.25;color:var(--navy)}
+img{max-width:100%}
+a{text-decoration:none}
+.container{width:min(1180px,92%);margin:0 auto}
+section{padding:72px 0}
+/* top bar */
+.topbar{background:var(--navy);color:#dbe6f2;font-size:13px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:#fff;font-weight:600}
+.topbar .tb-right{display:flex;gap:18px;flex-wrap:wrap}
+/* header */
+header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 14px rgba(14,42,71,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Poppins';font-weight:800;font-size:20px;border:2px solid var(--gold)}
+.brand b{font-family:'Poppins';font-size:18px;color:var(--navy);display:block;line-height:1.2}
+.brand small{color:var(--muted);font-size:11.5px;letter-spacing:.4px}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:var(--ink);font-weight:600;font-size:15px}
+.nav-links a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:700;font-family:'Poppins';font-size:15px;transition:.2s;border:none;cursor:pointer}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#10243c}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(201,162,39,.35)}
+.btn-outline{border:2px solid #fff;color:#fff;background:transparent}
+.btn-outline:hover{background:#fff;color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy2)}
+.menu-btn{display:none;background:none;border:none;font-size:28px;color:var(--navy);cursor:pointer}
+/* hero */
+.hero{background:linear-gradient(120deg,#0b2240 0%,#143a68 60%,#1a4a82 100%);color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.25),transparent 70%)}
+.hero h1{color:#fff;font-size:clamp(30px,5vw,52px);font-weight:800;margin:14px 0 16px}
+.hero h1 span{color:var(--gold2)}
+.hero p.lead{color:#cdd9e8;font-size:17px;max-width:640px;margin-bottom:28px}
+.hero-badge{display:inline-block;background:rgba(201,162,39,.15);border:1px solid var(--gold);color:var(--gold2);font-weight:600;font-size:13px;padding:7px 16px;border-radius:30px;letter-spacing:.5px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.hero-points{display:flex;gap:22px;flex-wrap:wrap;color:#dbe6f2;font-size:14px}
+.hero-points span{display:flex;align-items:center;gap:8px}
+.hero-points i{color:var(--gold2);font-style:normal;font-weight:700}
+/* stats */
+.stats{background:#fff;border-bottom:1px solid var(--line)}
+.stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:30px 0}
+.stat{text-align:center;padding:10px}
+.stat b{font-family:'Poppins';font-size:34px;color:var(--navy);display:block}
+.stat b em{color:var(--gold);font-style:normal}
+.stat small{color:var(--muted);font-weight:600}
+/* section heads */
+.kicker{color:var(--gold);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+.sec-head{max-width:680px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(26px,3.6vw,38px);margin:10px 0 12px}
+.sec-head p{color:var(--muted)}
+.center{margin-left:auto;margin-right:auto;text-align:center}
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-card{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:34px}
+.about-card h3{margin-bottom:10px;font-size:20px}
+.about-card p{color:var(--muted);font-size:15px}
+.about-list{list-style:none;margin-top:18px;display:grid;gap:12px}
+.about-list li{display:flex;gap:12px;align-items:flex-start;font-weight:500;font-size:15px}
+.about-list i{color:var(--gold);font-style:normal;font-weight:800}
+/* services */
+#services{background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;transition:.2s}
+.svc:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(14,42,71,.12);border-color:var(--gold)}
+.svc .ico{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.svc .ico svg{width:28px;height:28px;stroke:var(--gold2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:18px;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:14px;margin-bottom:14px}
+.svc a{color:var(--navy);font-weight:700;font-size:14px}
+.svc a:hover{color:var(--gold)}
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.why{border:1px solid var(--line);border-radius:16px;padding:28px;background:#fff}
+.why b{font-family:'Poppins';color:var(--navy);font-size:17px;display:block;margin-bottom:8px}
+.why b i{font-style:normal;color:var(--gold);margin-right:8px}
+.why p{color:var(--muted);font-size:14px}
+/* areas */
+.areas{background:var(--navy);color:#fff;text-align:center}
+.areas h2{color:#fff}
+.areas p{color:#cdd9e8}
+.city-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.city-chips span{border:1.5px solid var(--gold);color:var(--gold2);padding:10px 22px;border-radius:30px;font-weight:600;font-family:'Poppins';font-size:14px}
+/* quote */
+.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:0 12px 40px rgba(14,42,71,.08)}
+.form-card label{display:block;font-weight:600;font-size:14px;margin:14px 0 6px;color:var(--navy)}
+.form-card input,.form-card select,.form-card textarea{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font-size:15px;font-family:'Inter'}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--gold)}
+.contact-cards{display:grid;gap:16px;margin-top:8px}
+.ccard{display:flex;gap:16px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:18px}
+.ccard .ico{width:52px;height:52px;flex:0 0 52px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.ccard .ico svg{width:26px;height:26px;stroke:var(--gold2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ccard b{font-family:'Poppins';color:var(--navy);display:block}
+.ccard a,.ccard span.val{color:var(--ink);font-weight:600}
+.ccard small{color:var(--muted)}
+/* footer */
+footer{background:#0a1d33;color:#b9c8da;padding:56px 0 0}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;padding-bottom:40px}
+.foot-grid h4{color:#fff;margin-bottom:14px;font-size:16px}
+.foot-grid a{color:#b9c8da;display:block;margin-bottom:10px;font-size:14px}
+.foot-grid a:hover{color:var(--gold2)}
+.foot-brand b{font-family:'Poppins';color:#fff;font-size:20px}
+.foot-brand p{font-size:14px;margin-top:10px}
+.copy{border-top:1px solid rgba(255,255,255,.12);padding:18px 0;text-align:center;font-size:13px;color:#8fa2b8}
+/* whatsapp float */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.45)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:.6s}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:900px){
+  .svc-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.quote-grid{grid-template-columns:1fr}
+  .stats .container{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:18px;box-shadow:0 12px 24px rgba(0,0,0,.1);gap:16px}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+  .svc-grid,.why-grid{grid-template-columns:1fr}
+  section{padding:54px 0}
+  .hero{padding:70px 0 60px}
+  .topbar .tb-right{gap:10px}
+}
+</style>
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div>Alhassan Enterprises &amp; Dream Decore Solutions — Gujranwala &amp; Gujrat Divisions</div>
+    <div class="tb-right">
+      <a href="https://wa.me/923086498828">WhatsApp: 0308-6498828</a>
+      <a href="tel:+923338265833">Call: 0333-8265833</a>
+      <span>Mon–Sat: 9AM – 8PM</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <span class="brand-mark">AE</span>
+      <span><b>Alhassan Enterprises</b><small>DREAM DECORE SOLUTIONS</small></span>
+    </a>
+    <button class="menu-btn" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#quote" class="btn btn-gold" style="padding:10px 22px">Free Quote</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home" style="padding-top:96px">
+  <div class="container">
+    <span class="hero-badge">ALUMINIUM • STEEL • GLASS • COMPLETE INTERIORS</span>
+    <h1>Premium Aluminium, Steel, Glass<br>&amp; <span>Interior Solutions</span></h1>
+    <p class="lead">From wholesale aluminium profiles to complete home interiors — windows, doors, kitchens, blinds, wallpaper, wall panels, ceiling, tiles &amp; more. One trusted team for your entire project.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="https://wa.me/923086498828?text=Assalam-o-Alaikum!%20Mujhe%20apni%20project%20ka%20quote%20chahiye.">💬 WhatsApp Us</a>
+      <a class="btn btn-outline" href="tel:+923338265833">📞 0333-8265833</a>
+    </div>
+    <div class="hero-points">
+      <span><i>✓</i> Wholesale &amp; Retail Aluminium</span>
+      <span><i>✓</i> Expert Fabrication Team</span>
+      <span><i>✓</i> Free Site Visit &amp; Quote</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="container">
+    <div class="stat reveal"><b>14<em>+</em></b><small>Services Offered</small></div>
+    <div class="stat reveal"><b>6<em></em></b><small>Cities Served</small></div>
+    <div class="stat reveal"><b>2<em></em></b><small>Divisions Covered</small></div>
+    <div class="stat reveal"><b>24<em>/7</em></b><small>WhatsApp Support</small></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="kicker">About Our Company</span>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);margin:10px 0 16px">One Company, Every Solution<br>for Your Building</h2>
+      <p style="color:var(--muted);margin-bottom:16px"><b style="color:var(--navy)">Alhassan Enterprises</b>, with <b style="color:var(--navy)">Dream Decore Solutions</b>, serves homes, offices and commercial projects across Gujranwala &amp; Gujrat divisions. We deal in <b>all kinds of aluminium profiles</b> — wholesale and retail — and our own fabrication team handles everything from windows and doors to complete luxury interiors.</p>
+      <p style="color:var(--muted)">Instead of running after five different contractors, you get one accountable team: aluminium, steel, glass, woodwork, blinds, wallpaper, panels, ceiling and tiling — all under one roof.</p>
+    </div>
+    <div class="about-card reveal">
+      <h3>What we promise</h3>
+      <ul class="about-list">
+        <li><i>✓</i> Genuine, full-gauge aluminium profiles — wholesale rates available</li>
+        <li><i>✓</i> In-house fabrication — no middlemen, better finishing</li>
+        <li><i>✓</i> Free measurement visit &amp; written quotation</li>
+        <li><i>✓</i> Professional installation by trained team</li>
+        <li><i>✓</i> After-service support on WhatsApp</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker">Our Services</span>
+      <h2>Complete Range, One Roof</h2>
+      <p>Tap any service to inquire instantly on WhatsApp — or call us for a free site visit and quotation.</p>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker">Why Choose Us</span>
+      <h2>Built on Trust, Finished with Care</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><b><i>◆</i> Wholesale Direct</b><p>We deal in all kinds of aluminium profiles — you get factory-style rates, even for single-home projects.</p></div>
+      <div class="why reveal"><b><i>◆</i> Own Fabrication</b><p>Our own workshop and team — tighter quality control and faster delivery than outsourced work.</p></div>
+      <div class="why reveal"><b><i>◆</i> Full-Home Capability</b><p>Windows to wallpaper, kitchen to ceiling — one team coordinates your entire project.</p></div>
+      <div class="why reveal"><b><i>◆</i> Transparent Quotes</b><p>Written, item-wise quotations before work starts. No hidden charges, no surprises.</p></div>
+      <div class="why reveal"><b><i>◆</i> Professional Installation</b><p>Neat, level, sealed finishing — the details that make work look premium for years.</p></div>
+      <div class="why reveal"><b><i>◆</i> After-Service</b><p>Message us on WhatsApp anytime — adjustments and support long after handover.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="areas">
+  <div class="container reveal">
+    <span class="kicker" style="color:var(--gold2)">Service Areas</span>
+    <h2 style="margin:10px 0 12px">Serving Gujranwala &amp; Gujrat Divisions</h2>
+    <p>Free site visits across these cities — message us your location on WhatsApp.</p>
+    <div class="city-chips">
+      <span>Gujranwala</span><span>Wazirabad</span><span>Gujrat</span><span>Kharian</span><span>Ali Pur Chattha</span><span>Hafizabad</span>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE + CONTACT -->
+<section id="quote">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker">Get A Free Quote</span>
+      <h2>Tell Us About Your Project</h2>
+      <p>Fill this quick form — it opens WhatsApp with your details ready to send. No spam, no waiting.</p>
+    </div>
+    <div class="quote-grid">
+      <div class="form-card reveal">
+        <label>Your Name</label>
+        <input id="qName" placeholder="e.g. Muhammad Ahmad">
+        <label>Phone Number</label>
+        <input id="qPhone" placeholder="03xx-xxxxxxx" inputmode="tel">
+        <label>Service Needed</label>
+        <select id="qService">
+          <option>Aluminium Windows</option><option>Aluminium Doors</option>
+          <option>Aluminium Wholesale / Profiles</option><option>Aluminium Fabrication</option>
+          <option>Aluminium Kitchen</option><option>Glass Work</option>
+          <option>Iron &amp; Steel Work</option><option>Window Blinds</option>
+          <option>Wallpaper</option><option>Wall Panels</option>
+          <option>Ceiling Work</option><option>Tile &amp; Stone Work</option>
+          <option>Fiber Door</option><option>Wooden Door</option>
+          <option>Complete Home / Office Project</option>
+        </select>
+        <label>Message (size, quantity, city…)</label>
+        <textarea id="qMsg" rows="3" placeholder="e.g. 5 windows 4x5, Gujranwala"></textarea>
+        <button class="btn btn-gold" style="width:100%;margin-top:20px" onclick="sendQuote()">Send on WhatsApp →</button>
+      </div>
+      <div id="contact">
+        <div class="contact-cards">
+          <div class="ccard reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <div><b>WhatsApp</b><a href="https://wa.me/923086498828">0308-6498828</a><br><small>Fastest reply — 24/7</small></div>
+          </div>
+          <div class="ccard reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span>
+            <div><b>Call / Hotline</b><a href="tel:+923338265833">0333-8265833</a><br><small>Mon–Sat, 9AM – 8PM</small></div>
+          </div>
+          <div class="ccard reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <div><b>Email</b><a href="mailto:handsome57000@gmail.com">handsome57000@gmail.com</a><br><small>For drawings &amp; documents</small></div>
+          </div>
+          <div class="ccard reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><b>Timings</b><span class="val">Mon – Sat: 9:00 AM – 8:00 PM</span><br><small>Emergency WhatsApp: 24/7</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <b>Alhassan Enterprises</b>
+      <p style="color:var(--gold2);font-weight:600">Dream Decore Solutions</p>
+      <p>Aluminium, steel, glass &amp; complete interior solutions — wholesale and retail — across Gujranwala &amp; Gujrat divisions, Pakistan.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#why">Why Choose Us</a><a href="#quote">Free Quote</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="https://wa.me/923086498828">WhatsApp: 0308-6498828</a>
+      <a href="tel:+923338265833">Call: 0333-8265833</a>
+      <a href="mailto:handsome57000@gmail.com">handsome57000@gmail.com</a>
+      <a>Gujranwala &amp; Gujrat Divisions</a>
+    </div>
+  </div>
+  <div class="copy">© <span id="yr"></span> Alhassan Enterprises &amp; Dream Decore Solutions. All rights reserved.</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923086498828?text=Assalam-o-Alaikum!%20Mujhe%20quote%20chahiye." aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.1-.5-.2z"/></svg>
+</a>
+<script>
+const WA = "https://wa.me/923086498828?text=";
+const P = {
+  win:'<rect x="3" y="4" width="18" height="16" rx="1"/><path d="M12 4v16M3 12h18"/>',
+  door:'<rect x="5" y="3" width="14" height="18" rx="1"/><circle cx="15.5" cy="12" r="1"/>',
+  box:'<path d="M21 8v8a2 2 0 0 1-1 1.7l-7 4a2 2 0 0 1-2 0l-7-4A2 2 0 0 1 3 16V8a2 2 0 0 1 1-1.7l7-4a2 2 0 0 1 2 0l7 4A2 2 0 0 1 21 8z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/>',
+  fab:'<path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/>',
+  kit:'<path d="M4 21V10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v11"/><path d="M2 21h20M9 8V5a2 2 0 0 1 4 0v3"/>',
+  glass:'<path d="M6 2h12l-2 8a4 4 0 0 1-8 0L6 2z"/><path d="M12 14v7M8 21h8"/>',
+  steel:'<path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M4 21h16"/>',
+  blind:'<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 8h16M4 12h16M4 16h16"/>',
+  wall:'<rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 10h18M9 5v14"/>',
+  panel:'<rect x="3" y="4" width="18" height="16" rx="1"/><path d="M9 4v16M15 4v16"/>',
+  ceil:'<path d="M2 8h20M6 8V4M12 8V4M18 8V4"/><rect x="4" y="8" width="16" height="12" rx="1"/>',
+  tile:'<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>',
+  fdoor:'<rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 3v18"/>',
+  wdoor:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M5 9h14M5 15h14"/><circle cx="15" cy="12" r=".8"/>'
+};
+const services = [
+  ["Aluminium Wholesale & Profiles","All kinds of aluminium profiles at wholesale rates — full gauge, genuine material, ready stock.","box"],
+  ["Aluminium Fabrication","Custom fabrication by our own workshop team — precise cutting, neat joints, premium finishing.","fab"],
+  ["Aluminium Windows","Sliding, openable & fixed windows in all gauges and colours — with net options.","win"],
+  ["Aluminium Doors","Durable aluminium doors for homes & offices — single, double & sliding designs.","door"],
+  ["Aluminium Kitchen","Modern modular aluminium kitchens — rust-proof, easy-clean, built to your space.","kit"],
+  ["Glass Work","Glass partitions, railings, shower cabins, shop fronts & 12mm fittings.","glass"],
+  ["Iron & Steel Work","Main gates, staircases, railings, grills & structural steel — strong & long-lasting.","steel"],
+  ["Window Blinds","Roller, zebra & wooden blinds — light control with a clean modern look.","blind"],
+  ["Wallpaper","Imported & local designer wallpapers — hundreds of designs, expert pasting.","wall"],
+  ["Wall Panels","PVC, WPC & decorative wall panels — luxury look walls without civil work.","panel"],
+  ["Ceiling Work","False ceiling, PVC & gypsum designs — elegant finishing for every room.","ceil"],
+  ["Tile & Stone Work","Floor tiles, wall tiles & natural stone fixing with precise levelling.","tile"],
+  ["Fiber Doors","Waterproof fiber doors — ideal for bathrooms & kitchens, termite-proof.","fdoor"],
+  ["Wooden Doors","Solid & engineered wooden doors with polish — classic look, lasting build.","wdoor"]
+];
+document.getElementById('svcGrid').innerHTML = services.map(s=>
+  '<div class="svc reveal"><span class="ico"><svg viewBox="0 0 24 24">'+P[s[2]]+'</svg></span><h3>'+s[0]+'</h3><p>'+s[1]+'</p><a href="'+WA+encodeURIComponent("Assalam-o-Alaikum! Mujhe "+s[0]+" ka quote chahiye.")+'">Inquire on WhatsApp →</a></div>'
+).join('');
+function sendQuote(){
+  const n=document.getElementById('qName').value.trim(),
+        p=document.getElementById('qPhone').value.trim(),
+        s=document.getElementById('qService').value,
+        m=document.getElementById('qMsg').value.trim();
+  if(!n||!p){alert("Please apna naam aur phone number likhein.");return;}
+  const txt="Assalam-o-Alaikum! Website se quote request:%0AName: "+encodeURIComponent(n)+"%0APhone: "+encodeURIComponent(p)+"%0AService: "+encodeURIComponent(s)+"%0ADetails: "+encodeURIComponent(m||"-");
+  window.open(WA+txt,"_blank");
+}
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+window.addEventListener('scroll',()=>{document.querySelector('header').style.boxShadow=window.scrollY>10?'0 4px 18px rgba(14,42,71,.12)':'0 2px 14px rgba(14,42,71,.08)'});
+</script>
+</body>
+</html>
