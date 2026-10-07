@@ -99,6 +99,10 @@ header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 14px rg
 .areas p{color:#cdd9e8}
 .city-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 .city-chips span{border:1.5px solid var(--gold);color:var(--gold2);padding:10px 22px;border-radius:30px;font-weight:600;font-family:'Poppins';font-size:14px}
+.branch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.branch{background:rgba(255,255,255,.06);border:1.5px solid rgba(201,162,39,.5);border-radius:14px;padding:20px;text-align:left}
+.branch b{font-family:'Poppins';color:var(--gold2);display:block;font-size:16px;margin-bottom:6px}
+.branch span{color:#dbe6f2;font-size:14px}
 /* quote */
 .quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:0 12px 40px rgba(14,42,71,.08)}
@@ -128,6 +132,7 @@ footer{background:#0a1d33;color:#b9c8da;padding:56px 0 0}
 .reveal{opacity:0;transform:translateY(24px);transition:.6s}
 .reveal.on{opacity:1;transform:none}
 @media(max-width:900px){
+  .branch-grid{grid-template-columns:repeat(2,1fr)}
   .svc-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
   .about-grid,.quote-grid{grid-template-columns:1fr}
   .stats .container{grid-template-columns:repeat(2,1fr)}
@@ -256,12 +261,19 @@ footer{background:#0a1d33;color:#b9c8da;padding:56px 0 0}
   </div>
 </section>
 
-<!-- AREAS -->
+<!-- BRANCHES -->
 <section class="areas">
   <div class="container reveal">
-    <span class="kicker" style="color:var(--gold2)">Service Areas</span>
-    <h2 style="margin:10px 0 12px">Serving Gujranwala &amp; Gujrat Divisions</h2>
-    <p>Free site visits across these cities — message us your location on WhatsApp.</p>
+    <span class="kicker" style="color:var(--gold2)">Our Branches</span>
+    <h2 style="margin:10px 0 12px">4 Branches, At Your Service</h2>
+    <p>Visit your nearest branch — or message us on WhatsApp for a free site visit anywhere in the region.</p>
+    <div class="branch-grid">
+      <div class="branch"><b>📍 Gujranwala</b><span>Jinnah Road,<br>Near Shamsi Chowk</span></div>
+      <div class="branch"><b>📍 Gujrat</b><span>Shadiwal Road,<br>Near Phatak</span></div>
+      <div class="branch"><b>📍 Gulyana</b><span>Lalamusa Road,<br>Gulyana</span></div>
+      <div class="branch"><b>📍 Wazirabad</b><span>Arif Shaheed Road,<br>Qila Didar Singh, Near Exchange</span></div>
+    </div>
+    <p style="margin-top:26px">Also serving Kharian, Ali Pur Chattha, Hafizabad &amp; nearby areas</p>
     <div class="city-chips">
       <span>Gujranwala</span><span>Wazirabad</span><span>Gujrat</span><span>Kharian</span><span>Ali Pur Chattha</span><span>Hafizabad</span>
     </div>
